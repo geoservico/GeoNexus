@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StateSelectionForm</class>
+ <widget class="QDialog" name="StateSelectionForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GeoNexus - Seleção de Estado</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QDialog {
+        background-color: #ffffff;
+    }
+    QLabel#titleLabel {
+        color: #1a1a1a;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    QPushButton {
+        background-color: #ffffff;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #f5f5f5;
+        border: 2px solid #1a5a96;
+    }
+    QLabel[objectName^="label"] {
+        color: #2c3e50;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    QLabel#infoLabel {
+        color: #95a5a6;
+        font-size: 11px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>15</number>
+   </property>
+   <property name="leftMargin">
+    <number>30</number>
+   </property>
+   <property name="topMargin">
+    <number>30</number>
+   </property>
+   <property name="rightMargin">
+    <number>30</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>Selecione o Estado</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="layoutAmapa">
+       <item>
+        <widget class="QPushButton" name="btnAmapa">
+         <property name="minimumSize"><size><width>200</width><height>140</height></size></property>
+         <property name="iconSize"><size><width>180</width><height>120</height></size></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel" name="labelAmapa"><property name="text"><string>AMAPÁ</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="layoutPara">
+       <item>
+        <widget class="QPushButton" name="btnPara">
+         <property name="minimumSize"><size><width>200</width><height>140</height></size></property>
+         <property name="iconSize"><size><width>180</width><height>120</height></size></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel" name="labelPara"><property name="text"><string>PARÁ</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+      </layout>
+     </item>
+     <item row="0" column="2">
+      <layout class="QVBoxLayout" name="layoutBahia">
+       <item>
+        <widget class="QPushButton" name="btnBahia">
+         <property name="minimumSize"><size><width>200</width><height>140</height></size></property>
+         <property name="iconSize"><size><width>180</width><height>120</height></size></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel" name="labelBahia"><property name="text"><string>BAHIA</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QVBoxLayout" name="layoutGoias">
+       <item>
+        <widget class="QPushButton" name="btnGoias">
+         <property name="minimumSize"><size><width>200</width><height>140</height></size></property>
+         <property name="iconSize"><size><width>180</width><height>120</height></size></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel" name="labelGoias"><property name="text"><string>GOIÁS</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+      </layout>
+     </item>
+     <item row="1" column="1">
+      <layout class="QVBoxLayout" name="layoutTocantins">
+       <item>
+        <widget class="QPushButton" name="btnTocantins">
+         <property name="minimumSize"><size><width>200</width><height>140</height></size></property>
+         <property name="iconSize"><size><width>180</width><height>120</height></size></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel" name="labelTocantins"><property name="text"><string>TOCANTINS</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+      </layout>
+     </item>
+     <item row="1" column="2">
+      <layout class="QVBoxLayout" name="layoutMatoGrosso">
+       <item>
+        <widget class="QPushButton" name="btnMatoGrosso">
+         <property name="minimumSize"><size><width>200</width><height>140</height></size></property>
+         <property name="iconSize"><size><width>180</width><height>120</height></size></property>
+        </widget>
+       </item>
+       <item><widget class="QLabel" name="labelMatoGrosso"><property name="text"><string>MATO GROSSO</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation"><enum>Qt::Vertical</enum></property>
+     <property name="sizeHint" stdset="0"><size><width>20</width><height>20</height></size></property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="infoLabel">
+     <property name="text"><string>O projeto será baixado e aberto automaticamente.</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="supportLabel">
+     <property name="styleSheet">
+      <string notr="true">color: #2c3e50; font-size: 10px; font-weight: bold; margin-top: 5px;</string>
+     </property>
+     <property name="text"><string>Suporte via WhatsApp: (91) 99926-0318 e (91) 93618-0129</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

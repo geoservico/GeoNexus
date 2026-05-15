@@ -1,0 +1,20 @@
+[general]
+name=GeoNexus
+description=QGIS plugin for CAR technical analysis via geographic layer processing and inconsistency verification.
+version=1.9
+qgisMinimumVersion=3.40
+author=Forgegeo & Geoserviço
+email=assinatura.geoservico@gmail.com
+about=GeoNexus is a QGIS plugin developed to assist in the technical analysis of the CAR (Rural Environmental Registry) through the processing of geographic layers, comparison of official databases, and spatial verification of inconsistencies.
+category=Web
+repository=https://github.com/geoservico/GeoNexus
+homepage=https://forgegeo.com.br/
+tracker=https://github.com/geoservico/GeoNexus/issues
+icon=icon.png
+tags=geonexus, qgis, car, environmental, rural, ambiental, analysis, bahia, goias, tocantins, matogrosso
+experimental=False
+deprecated=False
+license=GPL version 2 or later
+license_file=LICENSE
+server=False
+external_dependencies=psycopg2
